@@ -1,6 +1,9 @@
 console.log("Node module wrrapper demo");
 
-console.log("__filename", __filename);
-console.log("__dirname", __dirname);
+console.log("__filename in wrapper explorer", __filename);
+console.log("__dirname in wrapper explorer", __dirname);
+ 
 
-mod
+module.exports.greet = function(name){
+    console.log(`Hello ${name}`);
+}

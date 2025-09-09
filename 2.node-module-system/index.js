@@ -17,5 +17,5 @@ console.log("caught an error" ,error.message);
 
 //module wrapper
 (
-    function(exports,require)
+    function(exports,require,module,__filename,__dirname)
 )
