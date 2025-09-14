@@ -10,10 +10,9 @@ class MyCostomEmitter extends EventEmitter{
     }
 }
 
-const MyCostomEmitter = new MyCostomEmitter();
+const emitter = new MyCostomEmitter();
 
-MyCostomEmitter.on('greeting', (input)=>{
+emitter.on('greeting', (input)=>{
     console.log('Greeting event', input)
 });
-
-MyCostomEmitter.greet("Barsharani Jena");
+emitter.greet("Barsharani Jena");
